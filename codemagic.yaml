@@ -1,11 +1,6 @@
 workflows:
   primary:
     name: Build and Test
-    environment:
-      vars:
-        ANDROID_HOME: "/usr/local/android-sdk"
-        JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
-        GRADLE_OPTS: "-Dorg.gradle.daemon=false"
     scripts:
       - name: Install dependencies
         script: |
