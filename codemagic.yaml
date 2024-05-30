@@ -1,0 +1,15 @@
+workflows:
+  primary:
+    name: Build and Test
+    environment:
+      vars:
+        # Define tus variables de entorno aquí si es necesario
+    scripts:
+      - name: Install dependencies
+        script: |
+          # Instala las dependencias necesarias para tu proyecto
+          ./gradlew dependencies
+      - name: Build APK
+        script: |
+          # Construye el APK de tu aplicación
+          ./gradlew assembleDebug
