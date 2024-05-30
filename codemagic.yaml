@@ -2,8 +2,6 @@ workflows:
   primary:
     name: Build and Test
     environment:
-      vars:
-        # Define tus variables de entorno aquí si es necesario
     scripts:
       - name: Install dependencies
         script: |
